@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Encrypt Decrypt</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section >
+        <div class="header">
+    
+        <div class="intro">
+            <h1>HEY!!
+                <br>Choose the type of encryption or decryption
+            </h1>
+            <div class="row">
+            <div class="d">
+            <button class="caesar" onclick="slowScrollTo('tcc');">Caesar Cipher</button>
+            </div>
+            <div class="d">
+            <button class="caesar" onclick="slowScrollTo('txor');" >XOR Encryption</button></div>
+            <div class="d">
+            <button class="caesar" onclick="slowScrollTo('trsa');">RSA Encryption</button></div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!---------cc------------->
+    <section id = "tcc">
+        <div  class = "header">
+        <div  class="cc">
+        <h1>Caesar Cipher</h1>
+        <h3>Choose encrypt or decrypt</h3>
+        <div class="row1">
+            <div class="d1">
+            <a href=""class="E">Encryption</a></div>
+            <div class="d1">
+            <a href=""class="D">Decryption</a></div>
+            </div>
+            </div>
+
+            <script>
+                function slowScrollTo(targetId) {
+                    const target = document.getElementById(targetId);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    } else {
+                        console.error(`Element with ID '${targetId}' not found.`);
+                    }
+                }
+            </script>
+            
+    </section>
+
+    <!-----xor------>
+    <section>
+        <div class = "header">
+        <div id="txor" class="XOR">
+        <h1>XOR Encryption</h1>
+        <h3>Choose encrypt or decrypt and type the key</h3>
+        <div class="row2">
+            <div class="d2">
+            <a href=""class="Ex">Encryption</a></div>
+            <div class="d2">
+            <a href=""class="Dx">Decryption</a></div>
+            <div class="d2">
+            <a href=""class="Kx">KEY Generation</a></div>
+        </div>
+        </div>        
+    </section>
+    <!---rsa------>
+    <section>
+        <div class = "header">
+        <div id="trsa" class="rsa">
+        <h1>RSA Encryption</h1>
+        <h3>Choose encrypt or decrypt and type the key</h3>
+        <div class="row3">
+            <div class="d3">
+            <a href=""class="Ex">Encryption</a></div>
+            <div class="d3">
+            <a href=""class="Dx">Decryption</a></div>
+            <div class="d3">
+            <a href=""class="Kx">KEY Generation</a></div>
+        </div>
+        </div>
+    </section>
+</body>
+</html>
